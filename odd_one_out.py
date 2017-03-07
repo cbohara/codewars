@@ -1,11 +1,6 @@
 import sys
 
 
-def is_odd(num):
-    """Determine if input number is odd."""
-    return True if num % 2 != 0 else False
-
-
 def is_even(num):
     """Determine if input number is even."""
     return True if num % 2 == 0 else False
@@ -13,7 +8,6 @@ def is_even(num):
 
 def odd_one_out(numbers):
     """Determine position of number that is the only odd or only even number in list."""
-    odds = list(filter(is_odd, numbers))
     evens = list(filter(is_even, numbers))
 
     if len(evens) == 1:

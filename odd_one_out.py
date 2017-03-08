@@ -15,7 +15,7 @@ def odd_one_out(numbers):
                 return index + 1
     
 
-def main(sys_argv):
+def main(script):
     """Transform string of numbers into list of ints and input to function."""
     numbers = [int(x) for x in sys.argv[1].split(' ')]
     print(odd_one_out(numbers))

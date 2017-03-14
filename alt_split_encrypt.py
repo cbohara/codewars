@@ -1,6 +1,6 @@
 import sys
 
-testing
+
 def encrypt_pattern(text):
     """Return encrypted text."""
     even_index = ""

@@ -8,8 +8,10 @@ def main(script):
     except IndexError:
         print("python3 counting_duplicates.py [input string]")
     else:
-        print(text)
-
+        text = text.lower()
+        input_len = len(text)
+        distinct_len = len(''.join(set(text)))
+        return input_len - distinct_len
 
 
 if __name__ == "__main__":

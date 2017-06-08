@@ -7,15 +7,7 @@ def main(script):
     except IndexError:
         print("python3 vowel_indices.py [input text]")
     else:
-        word = word.lower()
-        vowel = ['a', 'e', 'i', 'o', 'u', 'y']
-
-        solution = []
-        for index, char in enumerate(word):
-            if char in vowel:
-                solution.append(index + 1)
-
-        return solution
+        return [index for index, char in enumerate(word, start=1) if char.lower() in 'aeiouy']
 
 
 if __name__ == "__main__":

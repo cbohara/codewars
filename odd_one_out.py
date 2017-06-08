@@ -13,7 +13,7 @@ def odd_one_out(numbers):
         for index, num in enumerate(numbers):
             if num % 2 != 0:
                 return index + 1
-    
+
 
 def main(script):
     """Transform string of numbers into list of ints and input to function."""

@@ -6,7 +6,7 @@ def main(script):
     try:
         text = sys.argv[1]
     except IndexError:
-        print("python3 counting_duplicates.py [input string]")
+        print("python counting_duplicates.py [input string]")
     else:
         # ensure all chars are lower case
         text = text.lower()
